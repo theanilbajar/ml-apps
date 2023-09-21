@@ -1,3 +1,2 @@
-tensorflow==2.13.0
-transformers==4.33.2
+transformers[tf-cpu]
 streamlit==1.26.0
