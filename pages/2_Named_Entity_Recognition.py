@@ -17,7 +17,7 @@ model = TFAutoModelForTokenClassification.from_pretrained("dslim/bert-base-NER")
 # create pipeline
 pipe = pipeline("ner", model=model, tokenizer=tokenizer)
 
-query = st.text_area("your query", "India is my country")
+query = st.text_area("your query", "My name is Clara and I live in Berkeley, California.")
 
 # Function to visualize NER entities in the text
 def visualize_entities(text, entities):
